@@ -1,0 +1,7 @@
+{
+  "name": "Love For Dogs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
