@@ -5,8 +5,18 @@
 
   <!-- Login form -->
   <form>
-    <ion-input placeholder="Email ID" type="email"></ion-input>
-    <ion-input placeholder="Password" type="password"></ion-input>
+    <!-- Email ID -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Email ID</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <!-- Password -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
     <a href="forgot-pass" class="forgot-password-link">Forgot Password</a>
     <ion-button expand="block">Login</ion-button>
   </form>
