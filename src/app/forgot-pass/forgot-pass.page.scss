@@ -33,17 +33,30 @@ ion-img {
 form {
     margin-top: 2.5rem;
 
-    ion-input {
-        --placeholder-color: #939fab;
-        --placeholder-font-weight: 600;
-        --padding-start: 15px !important;
-        --padding-end: 15px !important;
-        border-radius: 10px;
-        border: 2px solid #e7ebee;
+    ion-item {
+        // Border color when the ion-item is focused
+        --highlight-color-focused: #256D85;
+
+        --border-radius: 10px;
+        --border-color: #e7ebee;
+        --border-width: 2px;
         margin-bottom: 20px;
-        height: 50px;
-        color: #256D85;
-        font-weight: 800;
+
+        // Color when the label associated with ion-item is focused
+        &.item-has-focus ion-label {
+            color: #256D85 !important;
+        }
+
+        ion-label {
+            color: #939fab !important;
+            font-family: Gilroy;
+            font-weight: 600;
+        }
+
+        ion-input {
+            --padding-bottom: 0 !important;
+            --padding-top: 12px !important;
+        }
     }
 
     .forgot-password-link {

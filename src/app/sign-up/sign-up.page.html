@@ -5,9 +5,23 @@
 
   <!-- Registeration form -->
   <form>
-    <ion-input placeholder="Full Name"></ion-input>
-    <ion-input placeholder="Email ID" type="email"></ion-input>
-    <ion-input placeholder="Password" type="password"></ion-input>
+    <!-- Full name -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <!-- Email ID -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Email ID</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <!-- Password -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
     <ion-button expand="block">Register</ion-button>
   </form>
 

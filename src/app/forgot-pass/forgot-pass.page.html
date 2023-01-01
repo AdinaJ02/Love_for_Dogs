@@ -1,4 +1,4 @@
-<!-- Forgot Password UI --> 
+<!-- Forgot Password UI -->
 <ion-content class="ion-padding">
   <a href="login"><ion-icon name="arrow-back" size="large"></ion-icon></a>
   <h4>Forgot Password</h4>
@@ -8,7 +8,12 @@
 
   <!-- Send email for resetting -->
   <form>
-    <ion-input placeholder="Email ID" type="email"></ion-input>
+    <!-- Email ID -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Email ID</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
     <ion-button expand="block">Reset Password</ion-button>
   </form>
 
