@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+}
+
+h1 {
+    margin-top: 15%;
+    margin-bottom: 7px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h4 {
+    color: #939fab;
+    font-weight: 600;
+}
+
+form {
+    margin-top: 4rem;
+
+    ion-item {
+        // Border color when the ion-item is focused
+        --highlight-color-focused: #256D85;
+
+        --border-radius: 10px;
+        --border-color: #e7ebee;
+        --border-width: 2px;
+        margin-bottom: 20px;
+
+        // Color when the label associated with ion-item is focused
+        &.item-has-focus ion-label {
+            color: #256D85 !important;
+        }
+
+        ion-label {
+            // color: #939fab !important;
+            font-family: Gilroy;
+            // font-weight: 600;
+        }
+
+        ion-input {
+            --padding-bottom: 0 !important;
+            --padding-top: 12px !important;
+        }
+
+        .dob {
+            --padding-top: 0px !important;
+        }
+    }
+
+    ion-button {
+        --box-shadow: none;
+        --border-radius: 10px;
+        --background: linear-gradient(90deg, rgba(43, 72, 101, 1) 0%, rgba(37, 109, 133, 1) 35%, rgba(143, 227, 207, 1) 100%);
+        height: 48px;
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        text-transform: initial;
+    }
+}

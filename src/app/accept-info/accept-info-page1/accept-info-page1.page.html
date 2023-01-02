@@ -1,0 +1,44 @@
+<!-- Accepting pet dog information page 1 -->
+<ion-content class="ion-padding">
+  <h1>Pet Info</h1>
+  <h4>Enter your pet dog's information</h4>
+
+  <!-- Accepting pet dog information form -->
+  <form>
+    <!-- Name -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <!-- Gender -->
+    <ion-item fill="outline">
+      <ion-label>Gender</ion-label>
+      <ion-select>
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- Date of birth -->
+    <ion-item fill="outline">
+      <!-- <ion-label position="floating">Date of Birth</ion-label> -->
+      <ion-input type="date" class="dob"></ion-input>
+    </ion-item>
+
+    <!-- Height -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Height in inches</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <!-- Weight -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Weight in kgs</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block">Next</ion-button>
+  </form>
+
+</ion-content>
