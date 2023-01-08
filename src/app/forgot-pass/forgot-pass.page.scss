@@ -33,6 +33,11 @@ ion-img {
 form {
     margin-top: 2.5rem;
 
+    .error {
+        color: red;
+        font-size: 15px;
+    }
+
     ion-item {
         // Border color when the ion-item is focused
         --highlight-color-focused: #256D85;
@@ -40,7 +45,6 @@ form {
         --border-radius: 10px;
         --border-color: #e7ebee;
         --border-width: 2px;
-        margin-bottom: 20px;
 
         // Color when the label associated with ion-item is focused
         &.item-has-focus ion-label {
@@ -77,7 +81,5 @@ form {
         height: 48px;
         font-size: 1rem;
         color: #fff;
-        margin-bottom: 0.5rem;
-        text-transform: initial;
     }
 }
