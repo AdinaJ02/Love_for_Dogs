@@ -7,14 +7,24 @@
   <ion-img src="assets/images/forgot-pass-icon.png"></ion-img>
 
   <!-- Send email for resetting -->
-  <form>
+  <form [formGroup]="forgotForm" (ngSubmit)="submitForm()">
     <!-- Email ID -->
     <ion-item fill="outline">
-      <ion-label position="floating">Email ID</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label position="floating">Email ID<span>*</span></ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
     </ion-item>
+    <!-- Email ID Error Messages -->
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+      Email is required.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+      Please provide valid email id.
+    </span><br><br>
 
-    <ion-button expand="block">Reset Password</ion-button>
+    <!-- Firebase error message -->
+    <!-- <span class="error">{{this.loginForm.value['error']}}</span><br><br> -->
+
+    <ion-button type="submit" expand="block">Reset Password</ion-button>
   </form>
 
 </ion-content>
