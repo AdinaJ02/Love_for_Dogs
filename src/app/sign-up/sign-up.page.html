@@ -16,6 +16,9 @@
     </span>
     <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.minlength">
       Name should be min 5 chars long.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.pattern">
+      It should only include first and last name.
     </span><br><br>
 
     <!-- Email ID -->
