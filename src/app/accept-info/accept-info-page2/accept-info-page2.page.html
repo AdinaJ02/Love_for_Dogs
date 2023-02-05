@@ -1,30 +1,39 @@
 <!-- Accepting pet dog information page 2 -->
 <ion-content class="ion-padding">
-  <a href="accept-info-page1"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+  <a (click)="back()"><ion-icon name="arrow-back" size="large"></ion-icon></a>
   <h1>Pet Info</h1>
   <h4>Enter your pet dog's information</h4>
 
   <!-- Accepting picture and bio form -->
-  <form>
+  <form [formGroup]="acceptForm2" (ngSubmit)="submitForm()">
     <!-- Profile Picture -->
-    <ion-card class="ion-text-center">
-      <ion-card-header>
-        <ion-card-title>Upload profile picture</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-button shape="round" size="small" class="btnImage">
-          <span>Select Image</span>
-          <input id="uploadBtn" type="file" class="upload" />
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
+    <ion-item fill="outline">
+      <ion-input formControlName="image" type="file" (change)="chooseFile($event)" accept="image/png, image/gif, image/jpeg"></ion-input>
+    </ion-item>
+    <!-- Profile Picture Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.image.errors?.required">
+      Profile Picture is required.
+    </span><br><br>
 
     <!-- Bio -->
     <ion-item fill="outline">
-      <ion-label position="floating">Bio</ion-label>
-      <ion-textarea [autoGrow]="true" rows="1"></ion-textarea>
+      <ion-label position="floating">Bio<span>*</span></ion-label>
+      <ion-textarea formControlName="bio" [autoGrow]="true" rows="1"></ion-textarea>
     </ion-item>
+    <!-- Bio Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.required">
+      Bio is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.minlength">
+      Bio needs to contain min 10 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.maxlength">
+      Bio needs to contain max 70 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.pattern">
+      Bio cannot contain only spaces, characters like @, [], etc. It needs to start with a character.
+    </span><br><br>
 
-    <ion-button expand="block" class="submit">Submit</ion-button>
+    <ion-button type="submit" expand="block" class="submit">Submit</ion-button>
   </form>
 </ion-content>

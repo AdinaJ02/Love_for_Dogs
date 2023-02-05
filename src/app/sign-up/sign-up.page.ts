@@ -46,8 +46,8 @@ export class SignUpPage implements OnInit {
   ngOnInit() {
     // Adding Validations
     this.signUpForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(5)]],
-      email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$')]],
+      name: ['', [Validators.required, Validators.minLength(5), Validators.pattern('^[a-zA-Z]+ [a-zA-Z]+$')]],
+      email: ['', [Validators.required, Validators.pattern('^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$')]],
       pass: ['', [Validators.required, Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]+$')]],
       error: ['']
     })
@@ -82,7 +82,7 @@ export class SignUpPage implements OnInit {
           });
 
           // Navigating to Accept info page
-          this.router.navigate(['/accept-info-page1']);
+          this.router.navigate(['/accept-info-page1'], {queryParams: {uid: res.user.uid}});
         }
       })
       .catch(err => {

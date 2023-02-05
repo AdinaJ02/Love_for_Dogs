@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -8,12 +7,16 @@ import { AcceptInfoPage1PageRoutingModule } from './accept-info-page1-routing.mo
 
 import { AcceptInfoPage1Page } from './accept-info-page1.page';
 
+// Importing Forms Module
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AcceptInfoPage1PageRoutingModule
+    AcceptInfoPage1PageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [AcceptInfoPage1Page]
 })
