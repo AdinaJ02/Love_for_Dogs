@@ -29,7 +29,7 @@
       Password is required.
     </span>
     <span class="error ion-padding" *ngIf="isSubmitted && errorControl.pass.errors?.pattern">
-      Password should be min 5 characters in length with only letters and numbers
+      Password should be min 8 and max 10 characters in length with at least one uppercase, lowercase, one digit, one special character.
     </span><br>
 
     <a href="forgot-pass" class="forgot-password-link">Forgot Password</a>

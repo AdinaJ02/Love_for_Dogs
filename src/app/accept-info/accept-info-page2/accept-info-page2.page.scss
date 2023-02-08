@@ -82,12 +82,21 @@ form {
         // Color when the label associated with ion-item is focused
         &.item-has-focus ion-label {
             color: #256D85 !important;
+
+            span {
+                color: red;
+            }
         }
 
         ion-label {
             color: #939fab !important;
             font-family: Gilroy;
             font-weight: 600;
+        }
+
+        #profile{
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
         ion-textarea {

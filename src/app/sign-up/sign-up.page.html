@@ -18,7 +18,7 @@
       Name should be min 5 chars long.
     </span>
     <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.pattern">
-      It should only include first and last name.
+      It should only include first and last name, digits and special symbols not allowed.
     </span><br><br>
 
     <!-- Email ID -->
@@ -45,7 +45,7 @@
       Password is required.
     </span>
     <span class="error ion-padding" *ngIf="isSubmitted && errorControl.pass.errors?.pattern">
-      Password should be min 5 characters in length with only letters and numbers
+      Password should be min 8 and max 10 characters in length with at least one uppercase, lowercase, one digit, one special character. 
     </span><br>
 
     <!-- Firebase error message -->
