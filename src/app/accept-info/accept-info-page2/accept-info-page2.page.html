@@ -8,7 +8,8 @@
   <form [formGroup]="acceptForm2" (ngSubmit)="submitForm()">
     <!-- Profile Picture -->
     <ion-item fill="outline">
-      <ion-input formControlName="image" type="file" (change)="chooseFile($event)" accept="image/png, image/gif, image/jpeg"></ion-input>
+      <ion-label position="floating">Profile Picture<span>*</span></ion-label>
+      <ion-input id="profile" formControlName="image" type="file" (change)="chooseFile($event)" accept="image/png, image/gif, image/jpeg"></ion-input>
     </ion-item>
     <!-- Profile Picture Error message -->
     <span class="error" *ngIf="isSubmitted && errorControl.image.errors?.required">
@@ -17,7 +18,7 @@
 
     <!-- Bio -->
     <ion-item fill="outline">
-      <ion-label position="floating">Bio<span>*</span></ion-label>
+      <ion-label position="floating">Bio for your pet dog<span>*</span></ion-label>
       <ion-textarea formControlName="bio" [autoGrow]="true" rows="1"></ion-textarea>
     </ion-item>
     <!-- Bio Error message -->

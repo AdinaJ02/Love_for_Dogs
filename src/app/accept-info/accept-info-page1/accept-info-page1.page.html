@@ -7,7 +7,7 @@
   <form [formGroup]="acceptForm1" (ngSubmit)="submitForm()">
     <!-- Name -->
     <ion-item fill="outline">
-      <ion-label position="floating">Name<span>*</span></ion-label>
+      <ion-label position="floating">Pet dog name<span>*</span></ion-label>
       <ion-input formControlName="name_pet" type="text"></ion-input>
     </ion-item>
     <!-- Name Error message -->
@@ -18,7 +18,7 @@
       Name should be min 3 chars long.
     </span>
     <span class="error" *ngIf="isSubmitted && errorControl.name_pet.errors?.pattern">
-      It should only include first name of the pet dog.
+      It should only include first name of the pet dog, special symbols, spaces and digits not allowed.
     </span><br><br>
 
     <!-- Gender -->

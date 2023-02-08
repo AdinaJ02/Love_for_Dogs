@@ -51,6 +51,7 @@ export class AcceptInfoPage1Page implements OnInit {
       this.uid = params.uid;
     });
 
+
     this.acceptForm1 = this.formBuilder.group({
       name_pet: ['', [Validators.required, Validators.minLength(3), Validators.pattern('^[a-zA-Z]*$')]],
       gender: ['', [Validators.required]],
