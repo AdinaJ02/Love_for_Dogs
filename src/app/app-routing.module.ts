@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'accept-info-page2',
     loadChildren: () => import('./accept-info/accept-info-page2/accept-info-page2.module').then( m => m.AcceptInfoPage2PageModule)
-  },  {
+  },
+  {
     path: 'home-page',
     loadChildren: () => import('./home-page/home-page.module').then( m => m.HomePagePageModule)
   },

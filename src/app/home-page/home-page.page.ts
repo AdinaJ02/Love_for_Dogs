@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// Importing the router
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.page.html',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePagePage implements OnInit {
 
-  constructor() { }
+  constructor(
+    // Adding a router 
+    public router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  cameraNavigate() {
+    this.router.navigate([''])
+  }
+
+  reminderNavigate(){
+    this.router.navigate([''])
+  }
 }

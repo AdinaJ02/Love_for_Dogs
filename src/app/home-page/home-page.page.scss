@@ -17,6 +17,14 @@ ion-header {
     a {
         text-decoration: none;
 
+        .card1 {
+            margin-top: 120px;
+        }
+
+        .card2 {
+            margin-top: 50px;
+        }
+
         ion-card {
             --background: rgb(143, 227, 207, 0.5);
             --color: #2C3246;
@@ -24,7 +32,6 @@ ion-header {
             height: 159px;
             text-align: center;
             border-radius: 16px;
-            margin-top: 24px;
             margin-left: auto;
             margin-right: auto;
 
@@ -32,23 +39,51 @@ ion-header {
                 width: 160px;
                 height: 90px;
                 padding-top: 10px;
-                padding-bottom: 17px;
                 margin: auto;
             }
 
             #playbutton {
-                width: 120px;
-                height: 80px;
-                margin-left: auto;
-                margin-right: auto;
-                padding-top: 10px;
-                padding-bottom: 17px;
+                width: 160px;
+                height: 90px;
+                margin: auto;
+                padding-top: 15px;
             }
 
             ion-card-content {
                 font-size: 18px;
                 font-weight: 500;
+                padding-top: 20px;
             }
         }
     }
+}
+
+ion-tab-bar {
+    bottom: 10px;
+    position: relative;
+    border-radius: 50px;
+    border-width: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ion-tab-button {
+    --color: var(--ion-color-medium);
+
+    &::before {
+        background-color: transparent;
+        display: block;
+        content: "";
+        margin: 0 auto;
+        width: 20px;
+        height: 2px;
+    }
+
+    &.tab-selected::before {
+        background-color: #2B4865;
+    }
+}
+
+.home {
+    --color: #2B4865;
 }
