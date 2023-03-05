@@ -20,8 +20,6 @@ import { Url } from 'url';
 export class AppComponent {
   userId!: string;
   userData!: unknown[];
-  pet_name!: unknown;
-  bio!: unknown;
   img_src_string!: Url;
 
   public appPages = [
