@@ -27,7 +27,7 @@ export class AppComponent {
     { title: 'GPS Tracker', url: '/folder/Inbox', icon: 'navigate' },
     { title: 'Contact Us', url: '/folder/Favorites', icon: 'chatbox' },
     { title: 'Settings', url: '/folder/Archived', icon: 'settings' },
-    { title: 'Log Out', url: '/folder/Trash', icon: 'log-out' },
+    { title: 'Log Out', url: '/logout', icon: 'log-out' },
   ];
   constructor(
     // Adding a firebase authentication
@@ -37,7 +37,7 @@ export class AppComponent {
     public firedb: AngularFireDatabase,
 
     // Adding angular fire storage
-    private fireStorage: AngularFireStorage,
+    public fireStorage: AngularFireStorage,
 
     private zone: NgZone
   ) { }

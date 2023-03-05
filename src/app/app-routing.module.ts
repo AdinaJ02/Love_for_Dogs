@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'sign-up',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -34,7 +34,12 @@ const routes: Routes = [
   {
     path: 'meal-day',
     loadChildren: () => import('./meal-day/meal-day.module').then( m => m.MealDayPageModule)
+  },
+  {
+    path: 'logout',
+    loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
   }
+
 
 
 

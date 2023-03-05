@@ -38,6 +38,13 @@ export class LoginPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    // Check if user is already logged in
+    this.fireauth.authState.subscribe((user) => {
+      if (user) {
+        this.router.navigate(['/home-page']);
+      }
+    });
+
     // Adding Validations
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.pattern('^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,5})$')]],
@@ -68,7 +75,7 @@ export class LoginPage implements OnInit {
         if (res.user) {
           console.log(res.user);
           // Navigating to Home Page
-          this.router.navigate(['/home-page'], {queryParams: {uid: res.user.uid}});
+          this.router.navigate(['/home-page'], { queryParams: { uid: res.user.uid } });
         }
       })
       .catch(err => {
