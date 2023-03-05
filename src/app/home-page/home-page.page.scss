@@ -17,14 +17,6 @@ ion-header {
     a {
         text-decoration: none;
 
-        .card1 {
-            margin-top: 120px;
-        }
-
-        .card2 {
-            margin-top: 50px;
-        }
-
         ion-card {
             --background: rgb(143, 227, 207, 0.5);
             --color: #2C3246;
@@ -33,6 +25,7 @@ ion-header {
             text-align: center;
             border-radius: 16px;
             margin-left: auto;
+            margin-top: 50px;
             margin-right: auto;
 
             #dog {
@@ -49,10 +42,23 @@ ion-header {
                 padding-top: 15px;
             }
 
+            #reminder {
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                padding-top: 10px;
+            }
+
             ion-card-content {
                 font-size: 18px;
                 font-weight: 500;
                 padding-top: 20px;
+
+
+            }
+
+            .rem {
+                padding-top: 7px;
             }
         }
     }

@@ -68,7 +68,7 @@ export class LoginPage implements OnInit {
         if (res.user) {
           console.log(res.user);
           // Navigating to Home Page
-          this.router.navigate(['/home-page']);
+          this.router.navigate(['/home-page'], {queryParams: {uid: res.user.uid}});
         }
       })
       .catch(err => {

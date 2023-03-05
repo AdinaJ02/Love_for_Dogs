@@ -2,8 +2,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button>
-        <img src="./assets/icon/menu-icon.png">
+      <ion-menu-button autoHide="false" (click)="openMenu()">
+        <img src="assets/icon/menu-icon.png">
       </ion-menu-button>
     </ion-buttons>
     <ion-title>Love For Dogs</ion-title>
@@ -13,37 +13,24 @@
 <ion-content>
   <div id="container">
     <a href="meal-day">
-      <ion-card class="card1">
+      <ion-card>
         <ion-img id="dog" src="assets/images/meal-icon.png"></ion-img>
         <ion-card-content>Meal Of The Day</ion-card-content>
       </ion-card>
     </a>
 
     <a href="">
-      <ion-card class="card2">
+      <ion-card>
         <ion-img id="playbutton" src="assets/images/Videos-icon.png"></ion-img>
         <ion-card-content>Informative Videos</ion-card-content>
       </ion-card>
     </a>
+
+    <a href="">
+      <ion-card>
+        <ion-img id="reminder" src="assets/images/reminders.png"></ion-img>
+        <ion-card-content class="rem">Reminders</ion-card-content>
+      </ion-card> 
+    </a>
   </div>
 </ion-content>
-
-<!-- Navigation bar -->
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home-page" layout="icon-top" class="home">
-      <ion-icon name="home"></ion-icon>
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="camera" layout="icon-top" (click)="cameraNavigate()">
-      <ion-icon name="camera"></ion-icon>
-      <ion-label>Camera</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="reminders" layout="icon-top" (click)="reminderNavigate()">
-      <ion-icon name="alarm"></ion-icon>
-      <ion-label>Reminders</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
