@@ -21,11 +21,13 @@ export class AppComponent {
   userId!: string;
   userData!: unknown[];
   img_src_string!: Url;
+  name_pet!: unknown;
+  bio!: unknown;
 
   public appPages = [
     { title: 'Camera', url: '/folder/Inbox', icon: 'camera' },
     { title: 'GPS Tracker', url: '/folder/Inbox', icon: 'navigate' },
-    { title: 'Contact Us', url: '/folder/Favorites', icon: 'chatbox' },
+    { title: 'Contact Us', url: '/contact-us', icon: 'chatbox' },
     { title: 'Settings', url: '/folder/Archived', icon: 'settings' },
     { title: 'Log Out', url: '/logout', icon: 'log-out' },
   ];
@@ -49,6 +51,8 @@ export class AppComponent {
 
       this.firedb.list('users/'+this.userId).valueChanges().subscribe(result => {
         this.userData = result;
+        this.name_pet = this.userData[6];
+        this.bio = this.userData[0];
       })
 
       this.fireStorage.ref('users/'+this.userId).getDownloadURL().subscribe((url) => {

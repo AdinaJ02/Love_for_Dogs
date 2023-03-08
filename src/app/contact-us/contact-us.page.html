@@ -1,0 +1,65 @@
+<!-- Contact Us Page -->
+<ion-content class="ion-padding">
+  <div class="header">
+    <div class="arrow">
+      <a href="home-page"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+    </div>
+    <div class="contact-us">
+      <p class="contact">Contact Us</p>
+    </div>
+  </div>
+
+  <img src="assets/images/contact-us.png"/>
+
+  <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
+    <!-- Name -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Name<span>*</span></ion-label>
+      <ion-input formControlName="name" name="from_name" type="text"></ion-input>
+    </ion-item>
+    <!-- Name Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.required">
+      Name is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.minlength">
+      Name should be min 5 chars long.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.name.errors?.pattern">
+      It should only include first and last name, digits and special symbols not allowed.
+    </span><br><br>
+
+    <!-- Email ID -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Email ID<span>*</span></ion-label>
+      <ion-input formControlName="email" name="user_email" type="email"></ion-input>
+    </ion-item>
+    <!-- Email ID Error Messages -->
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+      Email is required.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+      Please provide valid email id.
+    </span><br><br>
+
+    <!-- Message -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Message<span>*</span></ion-label>
+      <ion-textarea formControlName="message" name="message" [autoGrow]="true" rows="1"></ion-textarea>
+    </ion-item>
+    <!-- Message Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.message.errors?.required">
+      Message is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.message.errors?.minlength">
+      Message needs to contain min 10 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.message.errors?.maxlength">
+      Message needs to contain max 100 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.message.errors?.pattern">
+      Bio cannot contain only spaces, characters like @, [], etc. It needs to start with a character.
+    </span><br><br>
+
+    <ion-button type="submit" expand="block">Send</ion-button>
+  </form>
+</ion-content>
