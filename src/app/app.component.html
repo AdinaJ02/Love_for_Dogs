@@ -3,15 +3,17 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <div class="header">
-            <div class="image inline-block-child">
-              <img [src]="img_src_string">
+          <a href="profile-page">
+            <div class="header">
+              <div class="image inline-block-child">
+                <img [src]="img_src_string">
+              </div>
+              <div class="text-div inline-block-child">
+                <h1>{{ name_pet }}</h1>
+                <p>Bio: {{ bio }}</p>
+              </div>
             </div>
-            <div class="text-div inline-block-child">
-              <h1>{{ name_pet }}</h1>
-              <p>Bio: {{ bio }}</p>
-            </div>
-          </div>
+          </a>
           <ion-item-divider></ion-item-divider>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
