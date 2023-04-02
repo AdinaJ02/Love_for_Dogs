@@ -48,10 +48,10 @@ export class MealDayPage implements OnInit {
 
   ngOnInit() {
     // Adding the data to the database
-    // this.firedb.object('meal-day/09-04-2023').set({
-    //   heading: "Apples",
-    //   desc1: "Apples provide many important vitamins for dogs which includes vitamins A and C. They are also a good source of fiber which can help regulate a dogs digestion.",
-    //   desc2: "They also provide a way to keep your dog's teeth clean and help to freshen their breath. However, we should remove the core and the seeds of the apple before giving it to the dog."
+    // this.firedb.object('meal-day/15-04-2023').set({
+    //   heading: "Pears",
+    //   desc1: "In moderation, pears are a healthy snack, full of vitamin C, vitamin A, and fiber. However, just like with any food you give your dog, too many pears could lead to an upset stomach.",
+    //   desc2: "For small dogs, one slice of pear every now and then is plenty, while a whole pear is probably too much."
     // });
 
     this.firedb.list('meal-day/' + this.formattedDate).valueChanges().subscribe(result => {
