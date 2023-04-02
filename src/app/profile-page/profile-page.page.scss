@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+ion-img {
+  height: 300px;
+  opacity: 90%;
+}
+
+.header {
+  display: flex;
+
+  .arrow {
+    a {
+      color: black;
+
+      ion-icon {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .profile-page {
+    padding-top: 13px;
+    padding-left: 75px;
+    padding-bottom: 10px;
+
+    .profile {
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+}
+
+.text-div {
+  padding-left: 20px;
+  padding-top: 30px;
+
+  p {
+    font-size: 17px;
+  }
+
+}
