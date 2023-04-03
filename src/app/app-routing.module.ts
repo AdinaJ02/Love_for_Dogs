@@ -38,20 +38,31 @@ const routes: Routes = [
   {
     path: 'logout',
     loadChildren: () => import('./logout/logout.module').then( m => m.LogoutPageModule)
-  },  {
+  },
+  {
     path: 'contact-us',
     loadChildren: () => import('./contact-us/contact-us.module').then( m => m.ContactUsPageModule)
   },
   {
     path: 'profile-page',
     loadChildren: () => import('./profile-page/profile-page.module').then( m => m.ProfilePagePageModule)
-  }
-
-
-
-
-
-
+  },
+  {
+    path: 'informative-videos',
+    loadChildren: () => import('./informative-videos/informative-videos.module').then( m => m.InformativeVideosPageModule)
+  }, 
+  {
+    path: 'grooming',
+    loadChildren: () => import('./informative-videos/grooming/grooming.module').then( m => m.GroomingPageModule)
+  }, 
+  {
+    path: 'exercise',
+    loadChildren: () => import('./informative-videos/exercise/exercise.module').then( m => m.ExercisePageModule)
+  }, 
+  {
+    path: 'training',
+    loadChildren: () => import('./informative-videos/training/training.module').then( m => m.TrainingPageModule)
+  }, 
 ];
 
 @NgModule({

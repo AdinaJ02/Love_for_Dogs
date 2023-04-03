@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+
+    .arrow {
+        a {
+            color: black;
+
+            ion-icon {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .vids {
+        padding-top: 13px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+
+        .video {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
+
+ion-card {
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px 5px rgba(64, 65, 65, 0.395);
+
+    ion-card-title {
+        padding: 50px 0 50px;
+        margin: auto;
+        padding-left: 30px;
+    }
+}
+
+#grooming, #exercise, #training {
+    height: 100px;
+    width: 100px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.train, .groom, .exer {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
