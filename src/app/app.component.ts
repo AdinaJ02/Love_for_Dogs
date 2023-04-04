@@ -28,7 +28,7 @@ export class AppComponent {
     { title: 'Camera', url: '/folder/Inbox', icon: 'camera' },
     { title: 'GPS Tracker', url: '/folder/Inbox', icon: 'navigate' },
     { title: 'Contact Us', url: '/contact-us', icon: 'chatbox' },
-    { title: 'Settings', url: '/folder/Archived', icon: 'settings' },
+    { title: 'Settings', url: '/settings', icon: 'settings' },
     { title: 'Log Out', url: '/logout', icon: 'log-out' },
   ];
   constructor(
