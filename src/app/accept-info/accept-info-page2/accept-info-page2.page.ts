@@ -85,7 +85,7 @@ export class AcceptInfoPage2Page implements OnInit {
     this.location.back();
   }
 
-acceptInfo() {
+  acceptInfo() {
     this.firedb.object('users/' + this.uid).update({
       bio: this.acceptForm2.value['bio'],
     });

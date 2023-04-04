@@ -1,0 +1,92 @@
+<!-- Settings Page UI -->
+<ion-content class="ion-padding">
+  <div class="header">
+    <div class="arrow">
+      <a href="home-page"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+    </div>
+    <div class="settings">
+      <p class="set">Settings</p>
+    </div>
+  </div>
+
+  <!-- Settings Page Form -->
+  <form [formGroup]="settingsForm" (ngSubmit)="submitForm()">
+    <!-- Name of pet -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Pet dog name<span>*</span></ion-label>
+      <ion-input formControlName="name_pet" type="text" value="{{ name_pet }}"></ion-input>
+    </ion-item>
+    <!-- Name Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.name_pet.errors?.required">
+      Name is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.name_pet.errors?.minlength">
+      Name should be min 3 chars long.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.name_pet.errors?.pattern">
+      It should only include first name of the pet dog, special symbols, spaces and digits not allowed.
+    </span><br><br>
+
+    <!-- Height -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Height in inches<span>*</span></ion-label>
+      <ion-input formControlName="height" type="number" value="{{ height }}"></ion-input>
+    </ion-item>
+    <!-- Height Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.height.errors?.required">
+      Height is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.height.errors?.min">
+      Minimum height is 3.8 inches
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.height.errors?.max">
+      Maximum height is 35 inches
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.height.errors?.pattern">
+      Height cannot contain more than 1 decimal points
+    </span><br><br>
+
+    <!-- Weight -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Weight in kgs<span>*</span></ion-label>
+      <ion-input formControlName="weight" type="number" value="{{ weight }}"></ion-input>
+    </ion-item>
+    <!-- Weight Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.weight.errors?.required">
+      Weight is required.
+    </span><span class="error" *ngIf="isSubmitted && errorControl.weight.errors?.min">
+      Minimum weight is 1 kg.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.weight.errors?.max">
+      Maximum weight is 145 kgs
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.weight.errors?.pattern">
+      Weight cannot contain more than 1 decimal points
+    </span><br><br>
+
+    <!-- Bio -->
+    <ion-item fill="outline">
+      <ion-label position="floating">Bio for your pet dog<span>*</span></ion-label>
+      <ion-textarea formControlName="bio" [autoGrow]="true" rows="1" value="{{ bio }}"></ion-textarea>
+    </ion-item>
+    <!-- Bio Error message -->
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.required">
+      Bio is required.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.minlength">
+      Bio needs to contain min 10 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.maxlength">
+      Bio needs to contain max 70 characters.
+    </span>
+    <span class="error" *ngIf="isSubmitted && errorControl.bio.errors?.pattern">
+      Bio cannot contain only spaces, characters like @, [], etc. It needs to start with a character.
+    </span><br>
+
+    <!-- Firebase error and success message -->
+    <span class="success"><b>{{this.success}}</b></span>
+    <span class="error">{{this.settingsForm.value['error']}}</span><br>
+
+    <ion-button type="submit" expand="block">Save</ion-button>
+  </form>
+</ion-content>

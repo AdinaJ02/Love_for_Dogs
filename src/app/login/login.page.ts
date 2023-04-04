@@ -52,6 +52,7 @@ export class LoginPage implements OnInit {
       error: ['']
     })
   }
+  
   // Show and hide password
   hideShowPassword() {
     this.passwordType = this.passwordType === 'text' ? 'password' : 'text';
