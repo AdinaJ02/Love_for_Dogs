@@ -25,8 +25,9 @@ export class AppComponent {
   bio!: unknown;
 
   public appPages = [
-    { title: 'Camera', url: '/folder/Inbox', icon: 'camera' },
-    { title: 'GPS Tracker', url: '/folder/Inbox', icon: 'navigate' },
+    { title: 'Breed Information', url: '/folder/Inbox', icon: 'information' },
+    { title: 'Personality Quiz', url: '/folder/Inbox', icon: 'help-circle' },
+    { title: 'Music', url: '/folder/Inbox', icon: 'musical-notes' },
     { title: 'Contact Us', url: '/contact-us', icon: 'chatbox' },
     { title: 'Settings', url: '/settings', icon: 'settings' },
     { title: 'Log Out', url: '/logout', icon: 'log-out' },
