@@ -65,7 +65,15 @@ const routes: Routes = [
   },   {
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },  {
+    path: 'breed-info',
+    loadChildren: () => import('./breed-info/breed-info.module').then( m => m.BreedInfoPageModule)
   },
+  {
+    path: 'breed-info-page',
+    loadChildren: () => import('./breed-info-page/breed-info-page.module').then( m => m.BreedInfoPagePageModule)
+  },
+
 
 ];
 

@@ -25,7 +25,7 @@ export class AppComponent {
   bio!: unknown;
 
   public appPages = [
-    { title: 'Breed Information', url: '/folder/Inbox', icon: 'information' },
+    { title: 'Breed Information', url: '/breed-info', icon: 'information' },
     { title: 'Personality Quiz', url: '/folder/Inbox', icon: 'help-circle' },
     { title: 'Music', url: '/folder/Inbox', icon: 'musical-notes' },
     { title: 'Contact Us', url: '/contact-us', icon: 'chatbox' },
