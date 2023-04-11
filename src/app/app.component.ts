@@ -26,8 +26,8 @@ export class AppComponent {
 
   public appPages = [
     { title: 'Breed Information', url: '/breed-info', icon: 'information' },
-    { title: 'Personality Quiz', url: '/folder/Inbox', icon: 'help-circle' },
-    { title: 'Music', url: 'music', icon: 'musical-notes' },
+    { title: 'Personality Quiz', url: '/quiz1', icon: 'help-circle' },
+    { title: 'Music', url: '/music', icon: 'musical-notes' },
     { title: 'Contact Us', url: '/contact-us', icon: 'chatbox' },
     { title: 'Settings', url: '/settings', icon: 'settings' },
     { title: 'Log Out', url: '/logout', icon: 'log-out' },

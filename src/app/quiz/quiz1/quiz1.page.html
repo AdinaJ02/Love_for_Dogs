@@ -1,0 +1,22 @@
+<!-- Quiz Page 1 -->
+<ion-content class="ion-padding">
+  <div class="header">
+    <div class="arrow">
+      <a href="home-page"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+    </div>
+    <div class="quiz">
+      <p class="quizes">Quiz</p>
+    </div>
+  </div>
+
+  <div class="Dog">
+    <ion-img id="dogs" src="assets/images/dog-img1.png"></ion-img>
+  </div>
+
+  <p id="ques">Does your dog behave aggressively?</p>
+  <div class="ans">
+    <a (click)="navigatePage('1')"><p>1. Always</p></a>
+    <a (click)="navigatePage('2')"><p>2. Only in front of strangers</p></a>
+    <a (click)="navigatePage('3')"><p>3. Once in a while</p></a>
+  </div>
+</ion-content>

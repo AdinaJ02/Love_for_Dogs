@@ -65,7 +65,8 @@ const routes: Routes = [
   },   {
     path: 'settings',
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
-  },  {
+  },
+  {
     path: 'breed-info',
     loadChildren: () => import('./breed-info/breed-info.module').then( m => m.BreedInfoPageModule)
   },
@@ -76,6 +77,22 @@ const routes: Routes = [
   {
     path: 'music',
     loadChildren: () => import('./music/music.module').then( m => m.MusicPageModule)
+  },
+  {
+    path: 'quiz1',
+    loadChildren: () => import('./quiz/quiz1/quiz1.module').then( m => m.Quiz1PageModule)
+  },
+  {
+    path: 'quiz2',
+    loadChildren: () => import('./quiz/quiz2/quiz2.module').then( m => m.Quiz2PageModule)
+  },
+  {
+    path: 'quiz3',
+    loadChildren: () => import('./quiz/quiz3/quiz3.module').then( m => m.Quiz3PageModule)
+  },
+  {
+    path: 'quiz-output',
+    loadChildren: () => import('./quiz/quiz-output/quiz-output.module').then( m => m.QuizOutputPageModule)
   },
 
 

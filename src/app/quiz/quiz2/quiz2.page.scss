@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+
+    .arrow {
+        a {
+            color: white;
+
+            ion-icon {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .quiz {
+        padding-top: 13px;
+        padding-left: 107px;
+        padding-bottom: 10px;
+
+        .quizes {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
+
+ion-content {
+    --ion-background-color: #2B4865;
+}
+
+#ques {
+    font-size: 18px;
+    text-align: center;
+    color: #9CE5E5;
+    padding: 15px;
+}
+
+ion-img {
+    width: 70%;
+    margin: auto;
+}
+
+.ans {
+    p {
+        margin: auto;
+        color: #9CE5E5;
+        height: 40px;
+        width: 90%;
+        padding-top: 5px;
+        text-align: center;
+        border: #9CE5E5 2px solid;
+        margin-bottom: 25px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
