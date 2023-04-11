@@ -73,6 +73,10 @@ const routes: Routes = [
     path: 'breed-info-page',
     loadChildren: () => import('./breed-info-page/breed-info-page.module').then( m => m.BreedInfoPagePageModule)
   },
+  {
+    path: 'music',
+    loadChildren: () => import('./music/music.module').then( m => m.MusicPageModule)
+  },
 
 
 ];

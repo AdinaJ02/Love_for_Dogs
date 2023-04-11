@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+
+    .arrow {
+        a {
+            color: black;
+
+            ion-icon {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .music {
+        padding-top: 13px;
+        padding-left: 107px;
+        padding-bottom: 10px;
+
+        .mus {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
+
+ion-card {
+    border-radius: 20px;
+    margin-top: 65px;
+    box-shadow: 5px 5px 10px 5px rgba(64, 65, 65, 0.395);
+
+    ion-card-title {
+        padding: 50px 0 50px;
+        margin: auto;
+        padding-left: 30px;
+    }
+}
+
+#horses {
+    height: 100px;
+    width: 90px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+#RealLove{
+    height: 100px;
+    width: 90px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+#PoorFool{
+    height: 100px;
+    width: 90px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.real-love {
+    display: flex;
+}
+
+.wild-horses, .real-love, .poor-fool {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
