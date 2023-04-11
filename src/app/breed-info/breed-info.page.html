@@ -1,0 +1,495 @@
+<!-- Breed Information Page -->
+<ion-content class="ion-padding">
+  <div class="header">
+    <div class="arrow">
+      <a href="home-page"><ion-icon name="arrow-back" size="large"></ion-icon></a>
+    </div>
+    <div class="breed-info">
+      <p class="breed">Breed Information</p>
+    </div>
+  </div>
+
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Labrador')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/lab_ret.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Labrador Retriever</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Golden')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/golden_ret.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Golden Retriever</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Husky')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/siberian_husky.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Siberian Husky</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Bichon')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/bichon_frise.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Bichon Frise</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('German')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/german_shep.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>German Shepherd</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Alaskan')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/Alaskan.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Alaskan Malamute</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Bulldog')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/bulldog.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Bulldog</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Poodle')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/poodle.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Poodle</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Chihuahua')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/chi.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Chihuahua</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Collie')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/border_collie.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Border Collie</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Afghan')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/afghan_hound.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Afghan Hound</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Dacshund')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/dacsh.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Dacshund</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Rottweller')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/rottweller.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Rottweller</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Maltese')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/maltese.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Maltese Dog</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Chow')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/chow.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Chow Chow</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Pomerian')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/pom.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Pomerian</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Eskimo')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/eskimo.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Eskimo Dog</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Spaniel')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/english_spaniel.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>English Spaniel</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Basenji')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/basenji.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Basenji</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Havenese')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/havenese.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Havenese</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Brittany')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/brittany.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Brittany</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Bullmastiff')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/bullmastiff.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Bullmastiff</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Boston')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/boston_terr.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Boston Terrier</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Cairn')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/cairn_terr.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Cairn Terrier</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Sheltie')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/sheltie.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Sheltie</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Dobermann')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/dobermann.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Dobermann</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Shih')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/shih_tzu.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Shih Tzu</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Shiba')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/shiba_inu.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Shiba Inu</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Borzoi')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/borzoi.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Borzoi</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Samoyed')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/samoyed.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Samoyed</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Sarabi')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/sarabi.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Sarabi Dog</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Maltipoo')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/maltipoo.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Maltipoo</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Dalmatian')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/dalmatian.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Dalmatian</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Doodle')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/golden_doodle.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Golden Doodle</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Americanbully')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/american_bully.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>American bully</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Russell')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/russell_terr.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Russell Terrier</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="navigatePage('Akita')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/akita_inu.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Akita Inu</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card (click)="navigatePage('Pitbull')">
+            <div>
+              <ion-img id="dog_img" src="assets/images/breeds/pit_bull.png"></ion-img>
+            </div>
+            <div class="dog">
+              <ion-card-title>Pit Bull</ion-card-title>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+            <ion-card (click)="navigatePage('Belgian')">
+              <div>
+                <ion-img id="dog_img" src="assets/images/breeds/belgian_shep.png"></ion-img>
+              </div>
+              <div class="dog">
+                <ion-card-title>Belgian Shepherd</ion-card-title>
+              </div>
+            </ion-card>
+        </ion-col>
+
+        <ion-col>
+            <ion-card (click)="navigatePage('Affenpincscher')">
+              <div>
+                <ion-img id="dog_img" src="assets/images/breeds/affen.png"></ion-img>
+              </div>
+              <div class="dog">
+                <ion-card-title>Affenpincscher</ion-card-title>
+              </div>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

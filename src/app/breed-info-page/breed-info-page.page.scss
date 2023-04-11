@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+
+    .arrow {
+        a {
+            color: black;
+
+            ion-icon {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .breeds {
+        padding-top: 13px;
+        margin: auto;
+        padding-bottom: 15px;
+
+        .breed-name {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
+
+h1 {
+    color: #2B4865;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #6A6A6A;
+    padding-bottom: 20px;
+}
